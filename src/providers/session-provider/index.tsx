@@ -1,10 +1,10 @@
-import { ReactElement } from 'react';
 
-import { SessionContext as ISessionContext} from './types';
+import { ReactElement } from 'react';
+import { SessionContext as ISessionContext } from './types';
 import { createCtx } from '@utils/create-ctx';
 
-const [useSessionContext, SessionContext] =
-  createCtx<ISessionContext>();
+
+const [useSessionContext, SessionContext] = createCtx<ISessionContext>();
 
 interface Props {
   value: ISessionContext;
